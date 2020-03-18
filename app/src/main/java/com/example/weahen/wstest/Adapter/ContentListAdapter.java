@@ -64,7 +64,7 @@ public class ContentListAdapter extends BaseAdapter implements View.OnClickListe
     public ContentListAdapter(Context context, List<Content> navDrawerItems, Activity activity) {
         this.context = context;
         this.contentItems = navDrawerItems;
-        this.activity=activity;
+        this.activity = activity;
     }
 
     @Override
@@ -114,9 +114,9 @@ public class ContentListAdapter extends BaseAdapter implements View.OnClickListe
 
             } else {
 
-                if(contentItems.get(position).getWithdraw()){
+                if (contentItems.get(position).getWithdraw()) {
                     convertView = mInflater.inflate(R.layout.list_item_message_withdraw, null);
-                } else{
+                } else {
                     convertView = mInflater.inflate(R.layout.list_item_message_right, null);
                 }
                 TextView txtMsg = convertView.findViewById(R.id.txtMsg);
@@ -143,20 +143,19 @@ public class ContentListAdapter extends BaseAdapter implements View.OnClickListe
         }
 
 
-
+//显示昵称
         TextView txtlblMsgFrom = convertView.findViewById(R.id.lblMsgFrom);
         txtlblMsgFrom.setText(m.getUserName());
         CircleImageView imageSend = convertView.findViewById(R.id.chat_item_header);
         Log.e("Tag1", "MainActivity.sendHeadImage" + m.getHeadImage());
-
+//显示头像
         int i = Integer.parseInt(m.getHeadImage());
         Log.e("Tag1", "i" + i);
-       imageSend.setImageResource(i);
+        imageSend.setImageResource(i);
 //显示时间
         TextView txtTime = convertView.findViewById(R.id.getCurrentTime);
         txtTime.setText(m.getTime());
-        TextView withdraw=convertView.findViewById(R.id.chat_item_withdraw);
-
+        TextView withdraw = convertView.findViewById(R.id.chat_item_withdraw);
 
 
 //       thread = new Thread(new Runnable(){

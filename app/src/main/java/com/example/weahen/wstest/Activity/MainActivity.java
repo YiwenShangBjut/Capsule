@@ -14,7 +14,6 @@ import static com.example.weahen.wstest.db.DBContract.ChatEntry.COLUMN_NAME_UID;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -48,19 +47,15 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.weahen.wstest.Adapter.ContentListAdapter;
-import com.example.weahen.wstest.Adapter.ContentListAdapterInMain;
 import com.example.weahen.wstest.BaseActivity;
 import com.example.weahen.wstest.Model.Content;
 import com.example.weahen.wstest.Model.RefreshableView;
@@ -72,7 +67,6 @@ import com.example.weahen.wstest.Utils.NetworkUtility;
 import com.example.weahen.wstest.Utils.PictureUtil;
 import com.example.weahen.wstest.Utils.SharedPreferencesUtil;
 import com.example.weahen.wstest.Utils.Utils;
-import com.example.weahen.wstest.db.ChatContent;
 import com.example.weahen.wstest.db.MyDbOpenHelper;
 
 import org.json.JSONException;

@@ -63,7 +63,7 @@ public class PersonalizedActivity extends BaseActivity {
             case 1:
                 if (resultCode == RESULT_OK) {
                     imageChangeNotStored = data.getStringExtra("imageChangeNotStored");
-                    Log.e("Tag","从头像选者中传回来的头像id"+imageChangeNotStored);
+                    Log.e("Tag","从头像选择中传回来的头像id"+imageChangeNotStored);
                     int_imageChangeNotStored = Integer.parseInt(imageChangeNotStored);
                 }
                 break;
